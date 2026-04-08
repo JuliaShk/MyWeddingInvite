@@ -383,27 +383,43 @@ select {
    color: #2f2420;
 }
 
-.day.selected::after {
-   content: "❤";
+.day.selected::before {
+   content: "";
    position: absolute;
    left: 50%;
    top: 50%;
-   transform: translate(-50%, -45%);
-   font-size: 3.3em;
-   color: rgba(223, 181, 188, 0.35);
-   filter: blur(5px);
-   z-index: -2;
+   transform: translate(-50%, -43%);
+
+   width: clamp(32px, 5vw, 45px);
+   height: clamp(32px, 5vw, 45px);
+
+   background: url("data:image/svg+xml;utf8,\
+<svg viewBox='0 0 32 29' xmlns='http://www.w3.org/2000/svg'>\
+<path d='M23.6 0c-2.9 0-5.6 1.6-7.6 4.2C14 1.6 11.3 0 8.4 0 3.8 0 0 3.7 0 8.3c0 9.1 16 20.7 16 20.7s16-11.6 16-20.7C32 3.7 28.2 0 23.6 0z' fill='%23d9aeb6'/>\
+</svg>") no-repeat center / contain;
+
+   opacity: 0.62;
+   z-index: -1;
 }
 
-.day.selected::before {
-   content: "❤";
+.day.selected::after {
+   content: "";
    position: absolute;
    left: 50%;
-   top: 53%;
-   transform: translate(-50%, -44%);
-   font-size: clamp(2.2em, 4vw, 3em);
-   color: rgba(223, 181, 188, 0.58);
-   z-index: -1;
+   top: 50%;
+   transform: translate(-50%, -43%);
+
+   width: clamp(52px, 8vw, 72px);
+   height: clamp(52px, 8vw, 72px);
+
+   background: url("data:image/svg+xml;utf8,\
+<svg viewBox='0 0 32 29' xmlns='http://www.w3.org/2000/svg'>\
+<path d='M23.6 0c-2.9 0-5.6 1.6-7.6 4.2C14 1.6 11.3 0 8.4 0 3.8 0 0 3.7 0 8.3c0 9.1 16 20.7 16 20.7s16-11.6 16-20.7C32 3.7 28.2 0 23.6 0z' fill='%23dfb5bc'/>\
+</svg>") no-repeat center / contain;
+
+   opacity: 0.52;
+   filter: blur(6px);
+   z-index: -2;
 }
 
 .calendar__signature {
