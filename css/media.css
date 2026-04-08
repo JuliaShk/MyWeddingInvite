@@ -1,0 +1,238 @@
+@media (max-width: 1199px) {
+   :root {
+      --section-space: 88px;
+      --section-space-compact: 70px;
+   }
+
+   .hero__container {
+      gap: 44px;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
+   }
+
+   .timeline__list {
+      max-width: 720px;
+   }
+}
+
+@media (max-width: 991px) {
+   :root {
+      --section-space: 78px;
+      --section-space-compact: 64px;
+   }
+
+   .container {
+      padding-inline: 22px;
+   }
+
+   .hero {
+      padding-top: 48px;
+      padding-bottom: 70px;
+   }
+
+   .hero__container {
+      grid-template-columns: 1fr;
+      gap: 34px;
+   }
+
+   .hero__info {
+      max-width: 100%;
+      text-align: center;
+   }
+
+   .hero__note {
+      margin-inline: auto;
+   }
+
+   .hero__photo {
+      max-width: 560px;
+      margin-inline: auto;
+   }
+
+   .section-offset--calendar {
+      padding-top: 0;
+   }
+
+   .timeline__list {
+      --timeline-padding-left: 26px;
+      --timeline-line-x: 10px;
+   }
+
+   .timeline__item {
+      grid-template-columns: 92px 1fr;
+      gap: 18px;
+   }
+}
+
+@media (max-width: 767px) {
+   :root {
+      --section-space: 64px;
+      --section-space-compact: 56px;
+   }
+
+   .container {
+      padding-inline: 18px;
+   }
+
+   .invite__text,
+   .palette__text,
+   .response__text,
+   .wishes__content p {
+      margin-top: 22px;
+      font-size: 20px;
+      line-height: 1.5;
+   }
+
+   .hero__title {
+      font-size: clamp(60px, 21vw, 94px);
+   }
+
+   .hero__date {
+      font-size: 24px;
+   }
+
+   .hero__note {
+      font-size: 20px;
+   }
+
+   .place__link,
+   .response__btn {
+      min-height: 54px;
+      padding: 13px 24px;
+   }
+
+   .calendar-card__content {
+      padding: 26px 18px 22px;
+   }
+
+   .dow,
+   .days {
+      gap: 8px;
+   }
+
+   .day {
+      font-size: 22px;
+   }
+
+   .calendar__signature {
+      font-size: 21px;
+   }
+
+   .place__name {
+      margin-top: 24px;
+   }
+
+   .timeline__list {
+      margin-top: 28px;
+      padding-left: 0;
+   }
+
+   .timeline__list::before {
+      left: 8px;
+   }
+
+   .timeline__item {
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding: 12px 0 18px 28px;
+   }
+
+   .timeline__item::before {
+      left: 3px;
+      top: 21px;
+   }
+
+   .timeline__time {
+      font-size: 28px;
+   }
+
+   .timeline__content h3 {
+      font-size: 28px;
+   }
+
+   .timeline__content p {
+      font-size: 20px;
+   }
+
+   .response__btn {
+      min-width: min(100%, 320px);
+      font-size: 20px;
+      margin-inline: auto;
+   }
+}
+
+@media (max-width: 575px) {
+   :root {
+      --section-space: 56px;
+      --section-space-compact: 48px;
+   }
+
+   .hero {
+      padding-top: 32px;
+      padding-bottom: 56px;
+   }
+
+   .hero__subtitle {
+      margin-bottom: 18px;
+      font-size: 12px;
+   }
+
+   .hero__title {
+      margin-bottom: 16px;
+      font-size: clamp(52px, 21vw, 78px);
+      line-height: 0.98;
+   }
+
+   .hero__date {
+      margin-bottom: 10px;
+      font-size: 22px;
+   }
+
+   .hero__note {
+      font-size: 18px;
+   }
+
+   .hero__photo {
+      padding: 10px;
+      border-radius: 24px;
+   }
+
+   .hero__img {
+      border-radius: 18px;
+   }
+
+   .section-title {
+      font-size: clamp(30px, 9vw, 40px);
+   }
+
+   .invite__text,
+   .palette__text,
+   .response__text,
+   .wishes__content p,
+   .place__address span,
+   .timeline__content p,
+   .response__hint {
+      font-size: 18px;
+   }
+
+   .month {
+      font-size: 38px;
+   }
+
+   .dow div {
+      font-size: 10px;
+   }
+
+   .day {
+      font-size: 19px;
+   }
+
+   .place__link,
+   .response__btn {
+      width: 100%;
+      max-width: 320px;
+   }
+
+   .palette__composition {
+      justify-content: flex-start;
+   }
+}
