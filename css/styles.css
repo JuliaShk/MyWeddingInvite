@@ -569,7 +569,18 @@ select {
    align-items: center;
    width: 100%;
    overflow-x: auto;
-   padding: 10px 8px 6px;
+   padding: 10px 20px 6px;
+   position: relative;
+   mask-image: linear-gradient(to right,
+         transparent 0,
+         black 18px,
+         black calc(100% - 18px),
+         transparent 100%);
+   -webkit-mask-image: linear-gradient(to right,
+         transparent 0,
+         black 18px,
+         black calc(100% - 18px),
+         transparent 100%);
 }
 
 .palette__composition::-webkit-scrollbar {
@@ -588,7 +599,7 @@ select {
    border-radius: 50%;
    border: 1px solid rgba(97, 82, 75, 0.12);
    box-shadow: 0 4px 10px rgba(61, 42, 30, 0.04);
-   margin-left: -14px;
+   margin-left: -8px;
 }
 
 .palette__bubble:first-child {
