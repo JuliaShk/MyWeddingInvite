@@ -6,6 +6,7 @@
 
    .hero__container {
       gap: 44px;
+      -ms-grid-columns: minmax(0, 1fr) 44px minmax(320px, 440px);
       grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
    }
 
@@ -30,6 +31,7 @@
    }
 
    .hero__container {
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       gap: 34px;
    }
@@ -72,6 +74,7 @@
    }
 
    .timeline__item {
+      -ms-grid-columns: 92px 18px 1fr;
       grid-template-columns: 92px 1fr;
       gap: 18px;
    }
@@ -172,6 +175,7 @@
    }
 
    .timeline__item {
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       gap: 8px;
       padding: 12px 0 18px 28px;
@@ -300,6 +304,8 @@
    }
 
    .palette__composition {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
       justify-content: flex-start;
    }
 }
