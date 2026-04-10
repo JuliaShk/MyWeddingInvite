@@ -36,27 +36,21 @@ html {
 :root {
    --bg-main: #fcfaf7;
    --bg-soft: #f7f1eb;
-   --bg-tinted: #f4ede7;
-   --surface: rgba(255, 255, 255, 0.86);
 
    --text-main: #3d312c;
    --text-title: #5f5049;
    --text-soft: rgba(61, 49, 44, 0.84);
-   --text-muted: rgba(61, 49, 44, 0.62);
+   --text-muted: rgba(61, 49, 44, 0.72);
 
    --line-soft: rgba(97, 82, 75, 0.12);
-   --line-mid: rgba(97, 82, 75, 0.18);
 
    --accent: #c3a0a8;
    --accent-deep: #9f7880;
-   --accent-soft: rgba(195, 160, 168, 0.14);
 
    --shadow-soft: 0 10px 30px rgba(61, 42, 30, 0.04), 0 2px 8px rgba(61, 42, 30, 0.025);
    --shadow-card: 0 24px 60px rgba(61, 42, 30, 0.06), 0 8px 22px rgba(61, 42, 30, 0.035);
 
    --radius-xl: 32px;
-   --radius-lg: 24px;
-   --radius-md: 18px;
 
    --section-space: 96px;
    --section-space-compact: 76px;
@@ -146,17 +140,22 @@ select {
    display: block;
    width: 60px;
    height: 1px;
-   margin: 16px auto 0;
-   background: linear-gradient(90deg, transparent, rgba(159, 120, 128, 0.55), transparent);
+   margin: 18px auto 0;
+   background: linear-gradient(90deg, transparent, rgba(159, 120, 128, 0.72), transparent);
 }
 
 .fade-up {
+   opacity: 1;
+   transform: none;
+}
+
+.js .fade-up {
    opacity: 0;
    transform: translateY(22px);
    transition: opacity 0.85s ease, transform 0.85s ease;
 }
 
-.fade-up.visible {
+.js .fade-up.visible {
    opacity: 1;
    transform: translateY(0);
 }
@@ -199,7 +198,7 @@ select {
    margin: 0 0 22px;
    font-size: 14px;
    font-weight: 500;
-   letter-spacing: 0.22em;
+   letter-spacing: 0.18em;
    text-transform: uppercase;
    color: var(--text-muted);
 }

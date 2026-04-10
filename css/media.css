@@ -39,8 +39,22 @@
       text-align: center;
    }
 
+   .hero__subtitle {
+      font-size: 15px;
+   }
+
+   .hero__title {
+      font-size: clamp(68px, 24vw, 110px);
+   }
+
+   .hero__date {
+      font-size: 28px;
+   }
+
    .hero__note {
       margin-inline: auto;
+      font-size: 22px;
+      line-height: 1.5;
    }
 
    .hero__photo {
@@ -60,6 +74,20 @@
    .timeline__item {
       grid-template-columns: 92px 1fr;
       gap: 18px;
+   }
+
+   .invite__text,
+   .palette__text,
+   .response__text,
+   .wishes__content p,
+   .place__address span,
+   .timeline__content p {
+      font-size: 22px;
+      line-height: 1.55;
+   }
+
+   .response__hint {
+      font-size: 19px;
    }
 }
 
@@ -82,16 +110,23 @@
       line-height: 1.5;
    }
 
+   .hero__subtitle {
+      font-size: 15px;
+      letter-spacing: 0.14em;
+      color: rgba(61, 49, 44, 0.78);
+   }
+
    .hero__title {
-      font-size: clamp(60px, 21vw, 94px);
+      margin-bottom: 24px;
    }
 
    .hero__date {
-      font-size: 24px;
+      font-size: 26px;
    }
 
    .hero__note {
-      font-size: 20px;
+      font-size: 22px;
+      line-height: 1.5;
    }
 
    .place__link,
@@ -101,16 +136,16 @@
    }
 
    .calendar-card__content {
-      padding: 26px 18px 22px;
+      padding: 24px 16px 20px;
    }
 
    .dow,
    .days {
-      gap: 8px;
+      gap: 7px;
    }
 
    .day {
-      font-size: 22px;
+      font-size: 21px;
    }
 
    .calendar__signature {
@@ -119,6 +154,12 @@
 
    .place__name {
       margin-top: 24px;
+   }
+
+   .place__address span,
+   .response__hint {
+      font-size: 19px;
+      line-height: 1.5;
    }
 
    .timeline__list {
@@ -162,6 +203,11 @@
       font-size: 20px;
       margin-inline: auto;
    }
+
+   .day.selected::after {
+      font-size: 14px;
+      bottom: -14px;
+   }
 }
 
 @media (max-width: 575px) {
@@ -177,22 +223,24 @@
 
    .hero__subtitle {
       margin-bottom: 18px;
-      font-size: 12px;
+      font-size: 15px;
+      letter-spacing: 0.14em;
+      color: rgba(61, 49, 44, 0.78);
    }
 
    .hero__title {
-      margin-bottom: 16px;
-      font-size: clamp(52px, 21vw, 78px);
+      margin-bottom: 20px;
+      font-size: clamp(60px, 26vw, 100px);
       line-height: 0.98;
    }
 
    .hero__date {
-      margin-bottom: 10px;
-      font-size: 22px;
+      margin-bottom: 12px;
+      font-size: 24px;
    }
 
    .hero__note {
-      font-size: 18px;
+      font-size: 20px;
    }
 
    .hero__photo {
@@ -213,9 +261,14 @@
    .response__text,
    .wishes__content p,
    .place__address span,
-   .timeline__content p,
+   .timeline__content p {
+      font-size: 20px;
+      line-height: 1.55;
+   }
+
    .response__hint {
-      font-size: 18px;
+      font-size: 17px;
+      line-height: 1.45;
    }
 
    .month {
@@ -223,17 +276,27 @@
    }
 
    .dow div {
-      font-size: 10px;
+      font-size: 12px;
    }
 
    .day {
-      font-size: 19px;
+      font-size: 18px;
    }
 
    .place__link,
    .response__btn {
       width: 100%;
       max-width: 320px;
+   }
+
+   .dow,
+   .days {
+      gap: 6px;
+   }
+
+   .day.selected::after {
+      font-size: 13px;
+      bottom: -12px;
    }
 
    .palette__composition {
